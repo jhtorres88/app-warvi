@@ -1,0 +1,22 @@
+/* dashboard.component.css */
+
+.card-container {
+    display: flex;
+    justify-content: space-between; /* Ajusta según tus necesidades */
+  }
+  
+  .card-container .card {
+    width: 18rem; /* Establece el ancho deseado */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card-body {
+    flex-grow: 1; /* Hace que el contenido se expanda y llene el espacio disponible */
+  }
+  
+  .btn-primary {
+    width: 100%; /* Ajusta el ancho del botón al 100% */
+  }
+  
