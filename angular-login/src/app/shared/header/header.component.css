@@ -1,0 +1,6 @@
+header {
+    background: url(../../../images/header.jpg)no-repeat center center;
+    background-size: cover;
+    position: relative;
+    height: 200px; /* Ajusta la altura según sea necesario */
+}

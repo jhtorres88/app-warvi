@@ -1,0 +1,96 @@
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  /* Navbar */
+  .navbar {
+    box-shadow: 0 2px 4px rgba(226, 222, 222, 0.1);
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #6c757d;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #343a40;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    background-color: #343a40;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  .sidebar .nav-link {
+    color: #031526;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+  }
+  
+  .sidebar .nav-link:hover {
+    color: #7e1313;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .sidebar .nav-link.active {
+    color: #be1515;
+    background-color: #007bff;
+  }
+  
+  /* Cards */
+  .card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-title {
+    font-weight: bold;
+    color: #343a40;
+  }
+  
+  .card-text {
+    color: #6c757d;
+  }
+  
+  /* Responsive */
+  @media (max-width: 767.98px) {
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: -250px;
+      width: 250px;
+      height: 100vh;
+      z-index: 1000;
+      transition: left 0.3s ease;
+    }
+  
+    .sidebar.show {
+      left: 0;
+    }
+  
+    .sidebar-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+      display: none;
+    }
+  
+    .sidebar-overlay.show {
+      display: block;
+    }
+  }
